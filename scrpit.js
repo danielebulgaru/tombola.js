@@ -3,7 +3,7 @@ const tabellone = document.getElementById('tabellone')
 const numeriEstratti = new Set()   /*Crea Tabella*/
 
 
-for (let i = 1; i <= 76; i++) {
+for (let i = 1; i <= 90; i++) {
   const cella = document.createElement('div') /*Popolamento celle*/
   cella.classList.add('cella')
   cella.textContent = i
@@ -12,7 +12,7 @@ for (let i = 1; i <= 76; i++) {
 }
 
 
-let numeriDisponibili = Array.from({length: 76}, (_, i) => i + 1) /* Lista numeri disponibili*/
+let numeriDisponibili = Array.from({length: 90}, (_, i) => i + 1) /* Lista numeri disponibili*/
 
 const estraiNumero = () => {
   if (numeriDisponibili.length === 0) {
